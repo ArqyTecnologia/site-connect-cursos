@@ -15,17 +15,17 @@ export interface ServiceProps {
     slug: string,
     title: string,
     metadata: {
-      title_service: string,
-      image_service: {
+      titulo_servico: string,
+      imagem_servico: {
         url: string,
         imgix_url: string
       },
-      text_preview_service: string,
-      text_service: string,
-      button_group: {
-        button_active: boolean,
-        button_title: string,
-        button_link: string
+      texto_curto_servico: string,
+      texto_servico: string,
+      grupo_botao: {
+        ativar_botao: boolean,
+        butao_titulo: string,
+        link_botao: string
       }
     }
   }

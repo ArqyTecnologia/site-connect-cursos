@@ -31,9 +31,9 @@ export default async function Courses() {
                 {courses.objects.map(item => (
                     <Link href={`servicos/${item.slug}`} key={item.slug}>
                         <CardServices
-                            image={item.metadata.image_service.url}
-                            name_service={item.metadata.title_service}
-                            description_service={item.metadata.text_preview_service}
+                            image={item.metadata.imagem_servico.url}
+                            name_service={item.metadata.titulo_servico}
+                            description_service={item.metadata.texto_servico}
                         />
                     </Link>
 

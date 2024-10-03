@@ -3,24 +3,24 @@ export interface AboutProps{
       slug: string,
       title: string,
       metadata: {
-        banner_about: {
+        imagem_sobre: {
           url:string,
           imgix_url: string
         },
-        title_about: string,
-        text_about: string,
-        title_teacher_time: string,
-        text_teacher_time: string,
-        teachers:TeacherProps [],
+        titulo_sobre: string,
+        texto_sobre: string,
+        titulo_time_professore: string,
+        texto_time: string,
+        professores:TeacherProps [],
       }
     }
   }
 
   interface TeacherProps{
-    image_teacher: {
+    imagem_professor: {
         url: string,
         imgix_url:string
       },
-      name_teacher: string,
-      class_teachers: string
+      nome_professor: string,
+      materia_professor: string
   }

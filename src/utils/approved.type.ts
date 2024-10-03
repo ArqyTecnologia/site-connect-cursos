@@ -3,8 +3,8 @@ export interface ApprovedProps {
         slug: string,
         title: string,
         metadata: {
-            title_page : string,
-            description_page: string,
+            titulo_pagina : string,
+            descricao_pagina: string,
             aprovados: ItemApproved[];
 
         }
@@ -13,11 +13,11 @@ export interface ApprovedProps {
 }
 
 interface ItemApproved {
-    image_aprovado: {
+    imagem_aprovado: {
         url: string,
         imgix_url: string,
     },
-    name_aluno: string,
+    nome_aluno: string,
     concurso_aprovado: string,
 }
 

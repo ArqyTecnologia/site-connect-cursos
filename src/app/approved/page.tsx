@@ -13,18 +13,18 @@ export default async function Approved() {
         <div className="flex flex-col gap-8 m-10 my-4  px-10 py-5">
             <div className="items-center text-center">
                 <h1 className="text-blue-400 uppercase font-bold pb-4 text-lg">
-                    {object.metadata.title_page}
+                    {object.metadata.titulo_pagina}
                 </h1>
                 <p className="font-medium pb-4 text-base">
-                    {object.metadata.description_page}
+                    {object.metadata.descricao_pagina}
                 </p>
             </div>
             <div className="grid grid-cols-3 gap-8 p-4 items-center justify-between">
                 {object.metadata.aprovados.map(item => (
                     <CardsTeacher
-                        key={item.name_aluno}
-                        image={item.image_aprovado.url}
-                        teacher={item.name_aluno}
+                        key={item.nome_aluno}
+                        image={item.imagem_aprovado.url}
+                        teacher={item.nome_aluno}
                         classTeacher={item.concurso_aprovado}
                     />
                 ))}

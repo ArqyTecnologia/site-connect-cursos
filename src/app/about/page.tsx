@@ -19,7 +19,7 @@ export default async function AboutUs() {
             <div className="flex flex-col my-4 px-5 py-5">
                 <main className="grid grid-cols-2 gap-4 items-center">
                     <Image
-                        src={object.metadata.banner_about.url}
+                        src={object.metadata.imagem_sobre.url}
                         alt="Foto de uma professora preta com o braço levando"
                         width={500}
                         height={500}
@@ -28,11 +28,11 @@ export default async function AboutUs() {
                     />
                     <div className="flex flex-col">
                         <h2 className="text-blue-400 uppercase font-bold pb-4 text-lg">
-                            {object.metadata.title_about}
+                            {object.metadata.titulo_sobre}
                         </h2>
 
                         <p className="font-medium pb-4 text-base">
-                            {object.metadata.text_about}
+                            {object.metadata.texto_sobre}
                         </p>
                     </div>
                 </main>
@@ -40,19 +40,19 @@ export default async function AboutUs() {
                 <section className="h-screen flex flex-col justify-center items-center ">
                     <div className="flex flex-col text-center">
                         <h2 className="text-blue-400 uppercase font-bold pb-4 text-lg">
-                            {object.metadata.title_teacher_time}
+                            {object.metadata.titulo_time_professore}
                         </h2>
                         <p className="font-medium pb-4 text-base">
-                            {object.metadata.text_teacher_time}
+                            {object.metadata.texto_time}
                         </p>
                     </div>
                     <div className="grid grid-cols-3 gap-8 p-4">
-                        {object.metadata.teachers.map(teacher => (
+                        {object.metadata.professores.map(teacher => (
                             <CardsTeacher
-                                key={teacher.name_teacher}
-                                image={teacher.image_teacher.url}
-                                teacher={teacher.name_teacher}
-                                classTeacher={teacher.class_teachers}
+                                key={teacher.nome_professor}
+                                image={teacher.imagem_professor.url}
+                                teacher={teacher.nome_professor}
+                                classTeacher={teacher.materia_professor}
                             />
                         ))}
 
